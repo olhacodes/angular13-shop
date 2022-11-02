@@ -11,6 +11,7 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductsComponent implements OnInit {
   products: IProducts[];
   productsSubscription: Subscription;
+  console = console;
 
 
   constructor(private productsService: ProductsService) { }

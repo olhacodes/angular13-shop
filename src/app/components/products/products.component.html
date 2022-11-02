@@ -1,4 +1,8 @@
 <div class="container">
+  <mat-toolbar-row *ngIf="canEdit">
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="primary">Add procuct</button>
+  </mat-toolbar-row>
   <mat-card class="card" *ngFor="let product of products">
     <mat-card-title>{{product.title}}</mat-card-title>
     <img class="image" mat-card-image src="{{product.image}}" alt={{product.title}}>
@@ -11,7 +15,8 @@
       </div>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" mat-button>Buy</button>
+
+<button mat-raised-button color="primary" mat-button>Buy</button>
       <button mat-raised-button color="primary" mat-button [routerLink]="['/product', product.id]">Details</button>
     </mat-card-actions>
     <mat-card-footer></mat-card-footer>

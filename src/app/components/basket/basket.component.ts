@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-busket',
-  templateUrl: './busket.component.html',
+  selector: 'app-basket',
+  templateUrl: './basket.component.html',
   styleUrls: []
 })
-export class BusketComponent implements OnInit {
+export class BasketComponent implements OnInit {
 
   constructor() { }
 

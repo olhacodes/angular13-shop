@@ -1,19 +1,64 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+ "products": [
+   {
+    "id": 1,
+     "title": "Product 1",
+     "price": "1.99",
+     "image": "assets/mackbook.jpeg",
+     "configure": {
+      "chip": "M1",
+      "SSD": "256 GB",
+      "memory": "22 GB",
+      "display": "Retina"
+     }
+   },
+   {
+    "id": 2,
+     "title": "Product 2",
+     "price": "1.99",
+     "image": "assets/mackbook.jpeg",
+     "configure": {
+      "chip": "M1",
+      "SSD": "256 GB",
+      "memory": "22 GB",
+      "display": "Retina"
+     }
+   },
+   {
+    "id": 3,
+     "title": "Product 3",
+     "price": "1.99",
+     "image": "assets/mackbook.jpeg",
+     "configure": {
+      "chip": "M1",
+      "SSD": "256 GB",
+      "memory": "22 GB",
+      "display": "Retina"
+     }
+   },
+   {
+    "id": 4,
+     "title": "Product 4",
+     "price": "1.99",
+     "image": "assets/mackbook.jpeg",
+     "configure": {
+      "chip": "M1",
+      "SSD": "256 GB",
+      "memory": "22 GB",
+      "display": "Retina"
+     }
+   },
+   {
+    "id": 5,
+     "title": "Product 5",
+     "price": "1.99",
+     "image": "assets/mackbook.jpeg",
+     "configure": {
+      "chip": "M1",
+      "SSD": "256 GB",
+      "memory": "22 GB",
+      "display": "Retina"
+     }
+   }
+ ]
 }

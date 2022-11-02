@@ -1,7 +1,7 @@
 <div class="container">
   <mat-toolbar-row *ngIf="canEdit">
     <span class="example-spacer"></span>
-    <button mat-raised-button color="primary">Add procuct</button>
+    <button mat-raised-button color="primary" (click)="openDialog()">Add procuct</button>
   </mat-toolbar-row>
   <mat-card class="card" *ngFor="let product of products">
     <mat-card-title>{{product.title}}</mat-card-title>

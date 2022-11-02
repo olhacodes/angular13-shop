@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
 
 import { ProductsService } from 'src/app/services/products.service';
+import { DialogBoxComponent } from '../UI/dialog-box/dialog-box.component';
 
 @Component({
   selector: 'app-products',
@@ -11,10 +13,10 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductsComponent implements OnInit {
   products: IProducts[];
   productsSubscription: Subscription;
-  canEdit: true;
+  canEdit: boolean = true;
   canView: boolean = false;
 
-  constructor(private productsService: ProductsService) { }
+  constructor(private productsService: ProductsService, public dialog: MatDialog,) { }
 
   ngOnInit() {
     this.productsSubscription = this.productsService.getProducts().subscribe(data => {
@@ -25,7 +27,13 @@ export class ProductsComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    if(this.productsSubscription) this.productsSubscription.unsubscribe();
+    if (this.productsSubscription) this.productsSubscription.unsubscribe();
   }
 
+  openDialog(): void {
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '500px';
+
+    const dialogRef = this.dialog.open(DialogBoxComponent, dialogConfig);
+  }
 }

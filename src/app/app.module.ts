@@ -22,7 +22,10 @@ import { MainComponent } from './components/main/main.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductDetailsComponent,
+    BasketComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

@@ -59,6 +59,30 @@
         "display": "drhrdh"
       },
       "id": 12
+    },
+    {
+      "title": "gdhbdh",
+      "price": "",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "",
+        "ssd": "",
+        "memory": "",
+        "display": ""
+      },
+      "id": 13
+    },
+    {
+      "title": "test2",
+      "price": "",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "",
+        "ssd": "",
+        "memory": "",
+        "display": ""
+      },
+      "id": 14
     }
   ]
 }

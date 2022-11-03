@@ -4,7 +4,7 @@
     <input required matInput formControlName={{input}} [type]="input == 'price' ? 'number' : 'text'">
   </mat-form-field>
   <div class="form__actions">
-    <button mat-raised-button color="warn" (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button color="warn" (click)="onNoClick()" type="button">Cancel</button>
     <button mat-raised-button color="primary" [disabled]="myForm.invalid" type="submit">Add product</button>
   </div>
 </form>

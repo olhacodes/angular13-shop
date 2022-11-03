@@ -37,7 +37,9 @@ export class ProductsComponent implements OnInit {
     dialogConfig.disableClose = true;
 
     const dialogRef = this.dialog.open(DialogBoxComponent, dialogConfig);
-    dialogRef.afterClosed().subscribe(data => { this.postData(data)})
+    dialogRef.afterClosed().subscribe(data => {
+      if (data) this.postData(data)
+    })
   }
 
   postData(data: IProducts) {

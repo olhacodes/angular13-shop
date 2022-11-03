@@ -6,7 +6,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { MainComponent } from './components/main/main.component';
+import { DialogBoxComponent } from './components/UI/dialog-box/dialog-box.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { MainComponent } from './components/main/main.component';
     ProductsComponent,
     ProductDetailsComponent,
     BasketComponent,
-    MainComponent
+    MainComponent,
+    DialogBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,10 @@ import { MainComponent } from './components/main/main.component';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

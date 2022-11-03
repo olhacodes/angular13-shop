@@ -1,3 +1,10 @@
-<p>
-  dialog-box works!
-</p>
+<form class="form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="example-full-width" appearance="fill" *ngFor="let input of inputs">
+    <mat-label>{{input |titlecase }}</mat-label>
+    <input matInput formControlName={{input}}>
+  </mat-form-field>
+  <div class="form__actions">
+    <button mat-raised-button color="warn" (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Add product</button>
+  </div>
+</form>

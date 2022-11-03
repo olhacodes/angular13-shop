@@ -1,64 +1,76 @@
 {
- "products": [
-   {
-    "id": 1,
-     "title": "Product 1",
-     "price": "1.99",
-     "image": "assets/macbook.jpeg",
-     "configure": {
-      "chip": "M1",
-      "SSD": "256 GB",
-      "memory": "22 GB",
-      "display": "Retina"
-     }
-   },
-   {
-    "id": 2,
-     "title": "Product 2",
-     "price": "1.99",
-     "image": "assets/macbook.jpeg",
-     "configure": {
-      "chip": "M1",
-      "SSD": "256 GB",
-      "memory": "22 GB",
-      "display": "Retina"
-     }
-   },
-   {
-    "id": 3,
-     "title": "Product 3",
-     "price": "1.99",
-     "image": "assets/macbook.jpeg",
-     "configure": {
-      "chip": "M1",
-      "SSD": "256 GB",
-      "memory": "22 GB",
-      "display": "Retina"
-     }
-   },
-   {
-    "id": 4,
-     "title": "Product 4",
-     "price": "1.99",
-     "image": "assets/macbook.jpeg",
-     "configure": {
-      "chip": "M1",
-      "SSD": "256 GB",
-      "memory": "22 GB",
-      "display": "Retina"
-     }
-   },
-   {
-    "id": 5,
-     "title": "Product 5",
-     "price": "1.99",
-     "image": "assets/macbook.jpeg",
-     "configure": {
-      "chip": "M1",
-      "SSD": "256 GB",
-      "memory": "22 GB",
-      "display": "Retina"
-     }
-   }
- ]
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "price": "1.99",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256 GB",
+        "memory": "22 GB",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "price": "1.99",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256 GB",
+        "memory": "22 GB",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "price": "1.99",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256 GB",
+        "memory": "22 GB",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "price": "1.99",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256 GB",
+        "memory": "22 GB",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "price": "1.99",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256 GB",
+        "memory": "22 GB",
+        "display": "Retina"
+      }
+    },
+    {
+      "title": "test",
+      "price": "24354",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "fsdfs",
+        "ssd": "",
+        "memory": "sfcsdf",
+        "display": "sfsdf"
+      },
+      "id": 6
+    }
+  ]
 }

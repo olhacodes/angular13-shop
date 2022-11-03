@@ -1,3 +1,4 @@
+import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
@@ -41,5 +42,14 @@ export class ProductsComponent implements OnInit {
 
   postData(data: IProducts) {
     this.productsService.postProduct(data).subscribe(data => this.products.push(data))
+  }
+
+  deleteItem(id: number) {
+    this.productsService.deleteProductId(id).subscribe(() => this.products.find(item => {
+      if (id == item.id) {
+        let index = this.products.findIndex(item => item.id == id)
+        this.products.splice(index, 1);
+      }
+    }))
   }
 }

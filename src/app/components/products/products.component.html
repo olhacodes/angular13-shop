@@ -15,9 +15,13 @@
       </div>
     </mat-card-content>
     <mat-card-actions>
-
-<button mat-raised-button color="primary" mat-button>Buy</button>
+      <button mat-raised-button color="primary" mat-button>Buy</button>
       <button mat-raised-button color="primary" mat-button [routerLink]="['/product', product.id]">Details</button>
+      <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">Edit</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Edite</button>
+        <button mat-menu-item (click)="deleteItem(product.id)">Delete</button>
+      </mat-menu>
     </mat-card-actions>
     <mat-card-footer></mat-card-footer>
   </mat-card>

@@ -1,54 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Product 1",
-      "price": "1.99",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "M1",
-        "SSD": "256 GB",
-        "memory": "22 GB",
-        "display": "Retina"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Product 2",
-      "price": "1.99",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "M1",
-        "SSD": "256 GB",
-        "memory": "22 GB",
-        "display": "Retina"
-      }
-    },
-    {
-      "id": 3,
-      "title": "Product 3",
-      "price": "1.99",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "M1",
-        "SSD": "256 GB",
-        "memory": "22 GB",
-        "display": "Retina"
-      }
-    },
-    {
-      "id": 4,
-      "title": "Product 4",
-      "price": "1.99",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "M1",
-        "SSD": "256 GB",
-        "memory": "22 GB",
-        "display": "Retina"
-      }
-    },
-    {
       "id": 5,
       "title": "Product 5",
       "price": "1.99",
@@ -73,18 +25,6 @@
       "id": 6
     },
     {
-      "title": "",
-      "price": "",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "",
-        "ssd": "",
-        "memory": "",
-        "display": ""
-      },
-      "id": 7
-    },
-    {
       "title": "ewtr",
       "price": "sdfdsg",
       "image": "assets/macbook.jpeg",
@@ -95,30 +35,6 @@
         "display": "dfsfvds"
       },
       "id": 8
-    },
-    {
-      "title": "test",
-      "price": "asfs",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "sfsdfs",
-        "ssd": "",
-        "memory": "dfsgv",
-        "display": "sfcsdf"
-      },
-      "id": 9
-    },
-    {
-      "title": "ututuyj",
-      "price": "856",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "sdfvds",
-        "ssd": "",
-        "memory": "gsdgv",
-        "display": "sfvdsf"
-      },
-      "id": 10
     },
     {
       "title": "dfgfddhg",
@@ -143,41 +59,6 @@
         "display": "drhrdh"
       },
       "id": 12
-    },
-    {
-      "title": "dgdh",
-      "price": "43543",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "ewtgerd",
-        "SSD": "",
-        "memory": "dgdfhg",
-        "display": "sdgdfg"
-      },
-      "id": 13
-    },
-    {
-      "title": "ertgrd",
-      "price": "34546",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "frdg",
-        "memory": "fgbdf",
-        "display": "dfgfd"
-      },
-      "id": 14
-    },
-    {
-      "title": "sgfr",
-      "price": "23543",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "ewgfer",
-        "ssd": "gsdg",
-        "memory": "dsgd",
-        "display": "sgvdr"
-      },
-      "id": 15
     }
   ]
 }

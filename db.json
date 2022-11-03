@@ -13,16 +13,16 @@
       }
     },
     {
-      "title": "test",
-      "price": "24354",
+      "id": 6,
+      "title": "testEDIT",
+      "price": "123",
       "image": "assets/macbook.jpeg",
       "configure": {
-        "chip": "fsdfs",
-        "ssd": "",
-        "memory": "sfcsdf",
-        "display": "sfsdf"
-      },
-      "id": 6
+        "chip": "esfsd",
+        "ssd": "fgdx",
+        "memory": "sdfds",
+        "display": "fsdf"
+      }
     },
     {
       "title": "ewtr",

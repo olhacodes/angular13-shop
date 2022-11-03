@@ -31,18 +31,23 @@ export class ProductsComponent implements OnInit {
     if (this.productsSubscription) this.productsSubscription.unsubscribe();
   }
 
-  openDialog(): void {
+  openDialog(product?: IProducts): void {
     let dialogConfig = new MatDialogConfig();
     dialogConfig.width = '500px';
     dialogConfig.disableClose = true;
+    dialogConfig.data = product;
 
     const dialogRef = this.dialog.open(DialogBoxComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(data => {
-      if (data) this.postData(data)
+      if (data && data.id) {
+        this.editeProduct(data)
+      } else {
+        this.postProduct(data)
+      }
     })
   }
 
-  postData(data: IProducts) {
+  postProduct(data: IProducts) {
     this.productsService.postProduct(data).subscribe(data => this.products.push(data))
   }
 
@@ -53,5 +58,15 @@ export class ProductsComponent implements OnInit {
         this.products.splice(index, 1);
       }
     }))
+  }
+
+  editeProduct(product: IProducts ) {
+    this.productsService.editeProductId(product).subscribe(item => {
+      this.products = this.products.map(product => {
+        if (product.id === item.id) return item
+        else return product
+      })
+    });
+
   }
 }

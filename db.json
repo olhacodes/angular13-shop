@@ -71,6 +71,113 @@
         "display": "sfsdf"
       },
       "id": 6
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "",
+        "ssd": "",
+        "memory": "",
+        "display": ""
+      },
+      "id": 7
+    },
+    {
+      "title": "ewtr",
+      "price": "sdfdsg",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "fsdgfrds",
+        "ssd": "",
+        "memory": "dxfsv",
+        "display": "dfsfvds"
+      },
+      "id": 8
+    },
+    {
+      "title": "test",
+      "price": "asfs",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "sfsdfs",
+        "ssd": "",
+        "memory": "dfsgv",
+        "display": "sfcsdf"
+      },
+      "id": 9
+    },
+    {
+      "title": "ututuyj",
+      "price": "856",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "sdfvds",
+        "ssd": "",
+        "memory": "gsdgv",
+        "display": "sfvdsf"
+      },
+      "id": 10
+    },
+    {
+      "title": "dfgfddhg",
+      "price": "2434525",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "drgdhb",
+        "ssd": "",
+        "memory": "sdgdfgbdfg",
+        "display": "dsgdfghfd"
+      },
+      "id": 11
+    },
+    {
+      "title": "jgkjmbj234535",
+      "price": "3454353",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "terhehr",
+        "ssd": "",
+        "memory": "rdhdh",
+        "display": "drhrdh"
+      },
+      "id": 12
+    },
+    {
+      "title": "dgdh",
+      "price": "43543",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "ewtgerd",
+        "SSD": "",
+        "memory": "dgdfhg",
+        "display": "sdgdfg"
+      },
+      "id": 13
+    },
+    {
+      "title": "ertgrd",
+      "price": "34546",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "frdg",
+        "memory": "fgbdf",
+        "display": "dfgfd"
+      },
+      "id": 14
+    },
+    {
+      "title": "sgfr",
+      "price": "23543",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "ewgfer",
+        "ssd": "gsdg",
+        "memory": "dsgd",
+        "display": "sgvdr"
+      },
+      "id": 15
     }
   ]
 }

@@ -8,7 +8,7 @@ interface IProducts {
 
 interface IProductConfig {
     chip: string;
-    SSD: string;
+    ssd: string;
     memory: string;
     display: string;
 }

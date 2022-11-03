@@ -19,7 +19,7 @@ export class DialogBoxComponent implements OnInit {
     display: new FormControl('')
   });
 
-  inputs = ['title', 'price', 'chip', 'SSD', 'memory', 'display'];
+  inputs = ['title', 'price', 'chip', 'ssd', 'memory', 'display'];
 
   constructor(
     public dialogRef: MatDialogRef<DialogBoxComponent>,

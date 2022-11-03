@@ -18,12 +18,12 @@ export class DialogBoxComponent implements OnInit {
 
   myForm: FormGroup = new FormGroup({
     id: new FormControl(this.data?.id ?? null),
-    title: new FormControl(this.data?.title ?? null),
-    price: new FormControl(this.data?.price ?? null),
-    chip: new FormControl(this.data?.chip ?? null),
-    ssd: new FormControl(this.data?.ssd ?? null),
-    memory: new FormControl(this.data?.memory ?? null),
-    display: new FormControl(this.data?.display ?? null)
+    title: new FormControl(this.data?.title ?? ''),
+    price: new FormControl(this.data?.price ?? ''),
+    chip: new FormControl(this.data?.chip ?? ''),
+    ssd: new FormControl(this.data?.ssd ?? ''),
+    memory: new FormControl(this.data?.memory ?? ''),
+    display: new FormControl(this.data?.display ?? '')
   });
 
   isNew: boolean = true;
@@ -50,7 +50,7 @@ export class DialogBoxComponent implements OnInit {
     this.dialogRef.close(this.data);
   }
 
-  ngOnInit() {
+  ngOnInit():void {
   }
 
 }

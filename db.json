@@ -2,87 +2,27 @@
   "products": [
     {
       "id": 5,
-      "title": "Product 5",
+      "title": "Product 51",
       "price": "1.99",
       "image": "assets/macbook.jpeg",
       "configure": {
-        "chip": "M1",
-        "SSD": "256 GB",
-        "memory": "22 GB",
-        "display": "Retina"
+        "chip": "sfdsf",
+        "ssd": "fsdf",
+        "memory": "sfcsdfs",
+        "display": "fcsdf"
       }
     },
     {
       "id": 6,
-      "title": "testEDIT",
-      "price": "123",
+      "title": "wetert",
+      "price": "5345",
       "image": "assets/macbook.jpeg",
       "configure": {
-        "chip": "esfsd",
-        "ssd": "fgdx",
-        "memory": "sdfds",
-        "display": "fsdf"
+        "chip": "sdfsdgf",
+        "ssd": "fsdfvsd",
+        "memory": "sdfssf",
+        "display": "sfcsdv"
       }
-    },
-    {
-      "title": "ewtr",
-      "price": "sdfdsg",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "fsdgfrds",
-        "ssd": "",
-        "memory": "dxfsv",
-        "display": "dfsfvds"
-      },
-      "id": 8
-    },
-    {
-      "title": "dfgfddhg",
-      "price": "2434525",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "drgdhb",
-        "ssd": "",
-        "memory": "sdgdfgbdfg",
-        "display": "dsgdfghfd"
-      },
-      "id": 11
-    },
-    {
-      "title": "jgkjmbj234535",
-      "price": "3454353",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "terhehr",
-        "ssd": "",
-        "memory": "rdhdh",
-        "display": "drhrdh"
-      },
-      "id": 12
-    },
-    {
-      "title": "gdhbdh",
-      "price": "",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "",
-        "ssd": "",
-        "memory": "",
-        "display": ""
-      },
-      "id": 13
-    },
-    {
-      "title": "test2",
-      "price": "",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "",
-        "ssd": "",
-        "memory": "",
-        "display": ""
-      },
-      "id": 14
     }
   ]
 }

@@ -1,4 +1,3 @@
-import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
@@ -20,15 +19,11 @@ export class ProductsComponent implements OnInit {
   constructor(private productsService: ProductsService, public dialog: MatDialog,) { }
 
   ngOnInit() {
+    this.canEdit = true;
+
     this.productsSubscription = this.productsService.getProducts().subscribe(data => {
       this.products = data;
     })
-
-    this.canEdit = true;
-  }
-
-  ngOnDestroy() {
-    if (this.productsSubscription) this.productsSubscription.unsubscribe();
   }
 
   openDialog(product?: IProducts): void {
@@ -39,11 +34,14 @@ export class ProductsComponent implements OnInit {
 
     const dialogRef = this.dialog.open(DialogBoxComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(data => {
-      if (data && data.id) {
-        this.editeProduct(data)
-      } else {
-        this.postProduct(data)
+      if (data) {
+        if (data && data.id) {
+          this.editeProduct(data)
+        } else {
+          this.postProduct(data)
+        }
       }
+
     })
   }
 
@@ -68,5 +66,9 @@ export class ProductsComponent implements OnInit {
       })
     });
 
+  }
+
+  ngOnDestroy() {
+    if (this.productsSubscription) this.productsSubscription.unsubscribe();
   }
 }

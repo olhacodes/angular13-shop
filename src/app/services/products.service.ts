@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsService {
-  URL: string = 'http://localhost:3000/products'
+  URL: string = 'http://localhost:3000/products';
+  URL_BASKET: string = 'http://localhost:3000/basket';
 
   constructor(private http: HttpClient) { }
 
@@ -27,5 +28,13 @@ export class ProductsService {
 
   editeProductId(product: IProducts) {
     return this.http.put<IProducts>(`${this.URL}/${product.id}`, product)
+  }
+
+  addProductToBasket(product: IProducts) {
+    return this.http.post<IProducts>(this.URL_BASKET, product)
+  }
+
+  getProductsFromBasket() {
+    return this.http.get<IProducts[]>(this.URL_BASKET)
   }
 }

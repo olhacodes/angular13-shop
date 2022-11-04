@@ -24,5 +24,19 @@
         "display": "sfcsdv"
       }
     }
+  ],
+  "basket": [
+    {
+      "id": 6,
+      "title": "wetert",
+      "price": "5345",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "sdfsdgf",
+        "ssd": "fsdfvsd",
+        "memory": "sdfssf",
+        "display": "sfcsdv"
+      }
+    }
   ]
 }

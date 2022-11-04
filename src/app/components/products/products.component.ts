@@ -11,12 +11,13 @@ import { DialogBoxComponent } from '../UI/dialog-box/dialog-box.component';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  constructor(private productsService: ProductsService, public dialog: MatDialog,) { }
+
   products: IProducts[];
   productsSubscription: Subscription;
+
   canEdit: boolean = true;
   canView: boolean = false;
-
-  constructor(private productsService: ProductsService, public dialog: MatDialog,) { }
 
   ngOnInit() {
     this.canEdit = true;
@@ -65,7 +66,12 @@ export class ProductsComponent implements OnInit {
         else return product
       })
     });
+  }
 
+  addToBasket(product: IProducts) {
+    this.productsService.addProductToBasket(product).subscribe(product => {
+      console.log(product)
+    })
   }
 
   ngOnDestroy() {

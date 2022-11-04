@@ -8,12 +8,11 @@
       <p>SSD: {{item.configure.ssd}}</p>
       <p>Display: {{item.configure.display}}</p>
       <p>Memory: {{item.configure.memory}}</p>
-
     </mat-card-content>
     <mat-card-actions>
       <button class="button" mat-mini-fab color="primary" (click)="removeItemFromBasket(item)">-</button>
       <button class="button" mat-mini-fab color="primary" (click)="addItemToBasket(item)">+</button>
-      <p class="total">Total: </p>
+      <p class="total">Total: {{item.quantity}}</p>
     </mat-card-actions>
   </mat-card>
 </div>

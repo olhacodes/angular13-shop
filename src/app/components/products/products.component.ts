@@ -16,6 +16,9 @@ export class ProductsComponent implements OnInit {
   products: IProducts[];
   productsSubscription: Subscription;
 
+  basket: IProducts[];
+  basketSubscription: Subscription;
+
   canEdit: boolean = true;
   canView: boolean = false;
 
@@ -24,6 +27,10 @@ export class ProductsComponent implements OnInit {
 
     this.productsSubscription = this.productsService.getProducts().subscribe(data => {
       this.products = data;
+    })
+
+    this.basketSubscription = this.productsService.getProductsFromBasket().subscribe(product => {
+      this.basket = product;
     })
   }
 
@@ -69,12 +76,29 @@ export class ProductsComponent implements OnInit {
   }
 
   addToBasket(product: IProducts) {
+    product.quantity = 1;
+    let findItem;
+
+    if (this.basket.length > 0) {
+      findItem = this.basket.find((item) => item.id === product.id);
+      if (findItem) this.updateBasket(findItem);
+      else this.postToBasket(product);
+    } else this.postToBasket(product);
+  }
+
+  postToBasket(product: IProducts) {
     this.productsService.addProductToBasket(product).subscribe(product => {
-      console.log(product)
+      this.basket.push(product)
     })
+  }
+
+  updateBasket(product: IProducts) {
+    product.quantity += 1;
+    this.productsService.updateProductsBasket(product).subscribe(product => {})
   }
 
   ngOnDestroy() {
     if (this.productsSubscription) this.productsSubscription.unsubscribe();
+    if (this.basketSubscription) this.basketSubscription.unsubscribe();
   }
 }

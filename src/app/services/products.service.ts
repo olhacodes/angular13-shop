@@ -37,4 +37,8 @@ export class ProductsService {
   getProductsFromBasket() {
     return this.http.get<IProducts[]>(this.URL_BASKET)
   }
+
+  updateProductsBasket(product: IProducts) {
+    return this.http.put<IProducts>(`${this.URL_BASKET}/${product.id}`, product)
+  }
 }

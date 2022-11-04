@@ -23,6 +23,18 @@
         "memory": "sdfssf",
         "display": "sfcsdv"
       }
+    },
+    {
+      "id": 7,
+      "title": "regerh",
+      "price": "5325345",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "efsefg",
+        "ssd": "sefgsf",
+        "memory": "sfsd",
+        "display": "sgfsd"
+      }
     }
   ],
   "basket": [
@@ -36,7 +48,21 @@
         "ssd": "fsdfvsd",
         "memory": "sdfssf",
         "display": "sfcsdv"
-      }
+      },
+      "quantity": 2
+    },
+    {
+      "id": 5,
+      "title": "Product 51",
+      "price": "1.99",
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "sfdsf",
+        "ssd": "fsdf",
+        "memory": "sfcsdfs",
+        "display": "fcsdf"
+      },
+      "quantity": 3
     }
   ]
 }

@@ -41,4 +41,8 @@ export class ProductsService {
   updateProductsBasket(product: IProducts) {
     return this.http.put<IProducts>(`${this.URL_BASKET}/${product.id}`, product)
   }
+
+  deleteProductFromBasket(id: number) {
+    return this.http.delete<IProducts>(`${this.URL_BASKET}/${id}`)
+  }
 }

@@ -39,19 +39,6 @@
   ],
   "basket": [
     {
-      "id": 6,
-      "title": "wetert",
-      "price": "5345",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "sdfsdgf",
-        "ssd": "fsdfvsd",
-        "memory": "sdfssf",
-        "display": "sfcsdv"
-      },
-      "quantity": 2
-    },
-    {
       "id": 5,
       "title": "Product 51",
       "price": "1.99",

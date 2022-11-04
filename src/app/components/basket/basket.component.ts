@@ -1,3 +1,4 @@
+import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ProductsService } from 'src/app/services/products.service';
@@ -23,12 +24,21 @@ export class BasketComponent implements OnInit {
     if(this.basketSubscription) this.basketSubscription.unsubscribe()
   }
 
-  removeItemFromBasket(basket: IProducts) {
-
+  removeItemFromBasket(item: IProducts) {
+    if (item.quantity === 1) {
+      this.ProductService.deleteProductFromBasket(item.id).subscribe(item => {
+        let index = this.basket.findIndex(product => product.id === item.id)
+        this.basket.splice(index, 1)
+      })
+    } else {
+      item.quantity -= 1
+      this.ProductService.updateProductsBasket(item).subscribe()
+    }
   }
 
-  addItemToBasket(basket: IProducts) {
-
+  addItemToBasket(item: IProducts) {
+    item.quantity += 1
+    this.ProductService.updateProductsBasket(item).subscribe()
   }
 
 }

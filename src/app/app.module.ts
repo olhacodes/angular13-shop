@@ -21,6 +21,7 @@ import { BasketComponent } from './components/basket/basket.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { MainComponent } from './components/main/main.component';
 import { DialogBoxComponent } from './components/UI/dialog-box/dialog-box.component';
+import { ProductCardComponent } from './components/UI/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DialogBoxComponent } from './components/UI/dialog-box/dialog-box.compon
     ProductDetailsComponent,
     BasketComponent,
     MainComponent,
-    DialogBoxComponent
+    DialogBoxComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

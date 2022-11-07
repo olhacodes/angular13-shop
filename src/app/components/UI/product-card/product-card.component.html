@@ -1,0 +1,10 @@
+<mat-card-title>{{card.title}}</mat-card-title>
+<img class="image" mat-card-image src="{{card.image}}" alt={{card.title}}>
+<mat-card-content>
+  <p>Price: {{card.price | currency:"EUR"}}</p>
+  <div class="product-configuration">
+    <p>Chip: {{card.configure.chip}}</p>
+    <p>SSD: {{card.configure.ssd}}</p>
+    <p>Memory: {{card.configure.memory}}</p>
+  </div>
+</mat-card-content>

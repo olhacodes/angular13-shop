@@ -4,16 +4,7 @@
     <button mat-raised-button color="primary" (click)="openDialog()">Add procuct</button>
   </mat-toolbar-row>
   <mat-card class="card" *ngFor="let product of products">
-    <mat-card-title>{{product.title}}</mat-card-title>
-    <img class="image" mat-card-image src="{{product.image}}" alt={{product.title}}>
-    <mat-card-content>
-      <p>Price: {{product.price | currency:"EUR"}}</p>
-      <div class="product-configuration">
-        <p>Chip: {{product.configure.chip}}</p>
-        <p>SSD: {{product.configure.ssd}}</p>
-        <p>Memory: {{product.configure.memory}}</p>
-      </div>
-    </mat-card-content>
+    <app-product-card [card]="product"></app-product-card>
     <mat-card-actions>
       <button mat-raised-button color="primary" mat-button (click)="addToBasket(product)" type="button">Buy</button>
       <button mat-raised-button color="primary" mat-button [routerLink]="['/product', product.id]">Details</button>

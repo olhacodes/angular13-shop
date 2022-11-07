@@ -2,8 +2,7 @@
   <mat-card class="card">
     <app-product-card [card]="product"></app-product-card>
     <mat-card-actions>
-      <button mat-raised-button color="primary" mat-button>Buy</button>
-      <button mat-raised-button color="primary" mat-button routerLink="../products">Back</button>
+      <app-button routerLink="../products" [value]="'Back'"></app-button>
     </mat-card-actions>
     <mat-card-footer></mat-card-footer>
   </mat-card>

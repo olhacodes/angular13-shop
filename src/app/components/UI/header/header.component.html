@@ -3,10 +3,8 @@
     <mat-icon>home</mat-icon>
     <span class="logo" routerLink="">Online Shop</span>
     <span class="example-spacer"></span>
-    <div>
-      <button mat-button routerLink="">Main</button>
-      <button mat-button routerLink="products">Products</button>
-      <button mat-button routerLink="basket">Basket</button>
+    <div *ngFor="let link of links">
+      <button mat-button routerLink={{link}}>{{link === '' ? 'Main' : link | titlecase}}</button>
     </div>
   </mat-toolbar>
 </p>

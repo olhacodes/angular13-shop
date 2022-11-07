@@ -22,6 +22,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { MainComponent } from './components/main/main.component';
 import { DialogBoxComponent } from './components/UI/dialog-box/dialog-box.component';
 import { ProductCardComponent } from './components/UI/product-card/product-card.component';
+import { ButtonComponent } from './components/UI/button/button.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProductCardComponent } from './components/UI/product-card/product-card.
     BasketComponent,
     MainComponent,
     DialogBoxComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

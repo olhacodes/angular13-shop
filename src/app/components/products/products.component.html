@@ -1,14 +1,14 @@
 <div class="container">
   <mat-toolbar-row *ngIf="canEdit">
     <span class="example-spacer"></span>
-    <button mat-raised-button color="primary" (click)="openDialog()">Add procuct</button>
+    <app-button [value]="'Add product'" (click)=[openDialog()]></app-button>
   </mat-toolbar-row>
   <mat-card class="card" *ngFor="let product of products">
     <app-product-card [card]="product"></app-product-card>
     <mat-card-actions>
-      <button mat-raised-button color="primary" mat-button (click)="addToBasket(product)" type="button">Buy</button>
-      <button mat-raised-button color="primary" mat-button [routerLink]="['/product', product.id]">Details</button>
-      <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">Edit</button>
+      <app-button [value]="'Buy'" (click)=[addToBasket(product)] type="button"></app-button>
+      <app-button [value]="'Details'" [routerLink]="['/product', product.id]"></app-button>
+      <app-button [value]="'Edit'" [matMenuTriggerFor]="menu"></app-button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="openDialog(product)">Edit</button>
         <button mat-menu-item (click)="deleteItem(product.id)">Delete</button>

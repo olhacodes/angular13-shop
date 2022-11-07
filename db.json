@@ -27,13 +27,13 @@
     {
       "id": 7,
       "title": "regerh",
-      "price": "5325345",
+      "price": "1",
       "image": "assets/macbook.jpeg",
       "configure": {
-        "chip": "efsefg",
-        "ssd": "sefgsf",
-        "memory": "sfsd",
-        "display": "sgfsd"
+        "chip": "sfsf",
+        "ssd": "sfsvs",
+        "memory": "ascsz",
+        "display": "sdvcsdv"
       }
     },
     {
@@ -73,44 +73,18 @@
         "memory": "sfcsdfs",
         "display": "fcsdf"
       },
-      "quantity": 4
-    },
-    {
-      "id": 6,
-      "title": "wetert",
-      "price": "5345",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "sdfsdgf",
-        "ssd": "fsdfvsd",
-        "memory": "sdfssf",
-        "display": "sfcsdv"
-      },
       "quantity": 1
     },
     {
       "id": 7,
       "title": "regerh",
-      "price": "5325345",
+      "price": "1",
       "image": "assets/macbook.jpeg",
       "configure": {
-        "chip": "efsefg",
-        "ssd": "sefgsf",
-        "memory": "sfsd",
-        "display": "sgfsd"
-      },
-      "quantity": 1
-    },
-    {
-      "id": 9,
-      "title": "sdgvdfd",
-      "price": "23435",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "svdvsd",
-        "ssd": "vsdvs ",
-        "memory": "sdv fd",
-        "display": "dsvsbv d"
+        "chip": "sfsf",
+        "ssd": "sfsvs",
+        "memory": "ascsz",
+        "display": "sdvcsdv"
       },
       "quantity": 1
     }

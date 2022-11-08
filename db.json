@@ -74,19 +74,6 @@
         "display": "fcsdf"
       },
       "quantity": 1
-    },
-    {
-      "id": 7,
-      "title": "regerh",
-      "price": "1",
-      "image": "assets/macbook.jpeg",
-      "configure": {
-        "chip": "sfsf",
-        "ssd": "sfsvs",
-        "memory": "ascsz",
-        "display": "sdvcsdv"
-      },
-      "quantity": 1
     }
   ]
 }

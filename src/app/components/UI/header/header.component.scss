@@ -3,5 +3,12 @@
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  list-style: none;
 }

@@ -1,10 +1,15 @@
 <p>
   <mat-toolbar color="primary">
     <mat-icon>home</mat-icon>
-    <span class="logo" routerLink="">Online Shop</span>
+    <span class="logo" routerLink="">Angular Simple App</span>
     <span class="example-spacer"></span>
-    <div *ngFor="let link of links">
-      <button mat-button routerLink={{link}}>{{link === '' ? 'Main' : link | titlecase}}</button>
-    </div>
+  <ul class="react-router-example">
+    <li *ngFor="let link of links"
+      routerLink={{link}}
+      (click)="setActiveLink(link)"
+      [ngStyle]="{'textDecoration' : activeLink === link ? 'underline' : null }">
+        {{link === '' ? 'Main' : link | titlecase}}
+    </li>
+  </ul>
   </mat-toolbar>
 </p>
